@@ -1,0 +1,45 @@
+<div></div>
+
+<style>
+div{
+  border: 50px solid;
+  border-color: white white blue white;
+  position:absolute;
+  top: 0;
+  left: 100px;
+  width: 0px;
+  padding: 0;
+  animation: transition 10s 2s infinite;
+}
+@keyframes transition {
+  0% {
+    position: relative;
+    top: 0;
+    left: 100px;
+  }
+  25% {
+    position: relative;
+    border-color: white red white white;
+    top: 100px;
+    left: 0;
+  }
+  50% {
+    position: relative;
+    border-color: yellow white white white;
+    top: 200px;
+    left: 100px;
+  }
+  75% {
+    position: relative;
+    border-color: white white white green;
+    top: 100px;
+    left: 200px;
+  }
+  100% {
+    position: relative;
+    border-color: white white blue white;
+    top: 0;
+    left: 100px;
+  }
+}
+</style>

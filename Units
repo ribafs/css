@@ -1,0 +1,60 @@
+Absolute units are:
+
+    cm
+    mm
+    px (1px= 1/96th of 1in)
+    in (1in = 96px = 2.54cm)
+    pt (1pt = 1/72 of 1in)
+    pc (1pc = 12pt)
+
+Relative units are flexible and highly preferred by website developers, so the layout quickly adjusts to various screens of different sizes.
+
+Unit 	Description 	
+em 	Relative to the font-size of the element (2em means 2 times the size of the current font) 	
+ex 	Relative to the x-height of the current font (rarely used) 	
+ch 	Relative to the width of the "0" (zero) 	
+rem 	Relative to font-size of the root element 	
+vw 	Relative to 1% of the width of the viewport* 	
+vh 	Relative to 1% of the height of the viewport* 	
+vmin 	Relative to 1% of viewport's* smaller dimension 	
+vmax 	Relative to 1% of viewport's* larger dimension 	
+% 	Relative to the parent element 	
+
+Tip: The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+
+Going through the two categories, it is undeniable that relative CSS units are preferable choices over absolute units for responsive web designing. However, there are still lots of relative units. How will you know what CSS unit you should use for your website layout?
+
+H3: Em
+
+CSS em unit is a relative unit assigned depending on the font size of the parent element.
+
+.example {
+   font-size: 15px;
+   padding: 3em;
+   margin: .5em;
+}
+
+Looking at the em CSS example, 15px is the parent element. It means 1em is equal to 15px. The padding value 3em equates to 45px (that’s 15*3). Furthermore, margin then equates to 7.5px (15*.5).
+
+Rem
+
+The CSS rem unit is closely similar to the em unit. The difference between the two lies in their element for reference. Unlike the em unit dependent on the current element font size, CSS rem uses the root element (HTML) font size. Simply set the root element, and the measurement across all pages will be consistent.
+
+Ex
+
+The ex unit is relative to the height of the current font’s lowercase letter x. The measurement can change depending on the font used for the website as well as the font size.
+
+Viewport units
+
+You will find four viewport-based units in CSS: vh, vw, vmin, and vmax. Viewport refers to the end user’s visible area of a web page. This will depend on the device display size, may it be a mobile phone, computer screen, or tablet.
+
+·         Viewport height (vh) unit – CSS viewport height refers to the height of the viewport. 1vh is equal to 1% of the viewport height.
+
+·         Viewport width (vw) unit – this unit refers to the width of the viewport. 1vw equals to 1% of the viewport width.
+
+·         Viewport minimum (vmin) and viewport maximum (vmax) unit – these two units are based on the smaller and larger viewport dimension, respectively.
+
+
+
